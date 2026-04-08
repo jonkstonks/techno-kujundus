@@ -24,9 +24,9 @@ body {
     /* background-image: url("./images/hero-bg.png"); */
     background-image:
         linear-gradient(to right,
-            rgba(255, 255, 255, 1) 15%,
+            rgba(255, 255, 255, 1) 20%,
             rgba(255, 255, 255, 0) 50%,
-            rgba(255, 255, 255, 1) 90%),
+            rgba(255, 255, 255, 1) 79%),
         url("./images/hero-bg.png");
     background-repeat: repeat-y;
     background-size: auto 100%;
@@ -126,25 +126,26 @@ main {
     color: var(--primary-blue);
     max-width: 100%;
     margin: 0 auto;
-    padding: 3rem 0;
+    /* padding: 3rem 0; */
 }
 
 section {
     background-color: var(--primary-white);
-    margin: 0 0 2.4rem 0;
     padding: 2rem 0 2rem 0;
 }
 
 /* Headings */
 
 h1 {
-    font-size: 64px;
+    font-size: 72px;
+    line-height: 5.3rem;
     font-weight: 600;
     /* margin-bottom: 1rem; */
 }
 
 h2 {
     font-size: 48px;
+    line-height: 4.5rem;
     font-weight: 400;
     /* margin-bottom: 1rem; */
 }
@@ -170,8 +171,33 @@ h5 {
 /* Hero */
 
 section.hero {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
     background-color: transparent !important;
-    width: auto;
+    /* width: auto; */
+}
+
+/* section.hero .img {
+    box-sizing: border-box;
+    max-height: 421px;
+    width: 100%;
+} */
+
+.hero-content {
+    padding-left: 48px;
+    padding-right: 48px;
+    width: 1440px;
+}
+
+.hero-content h2 {
+    padding-top: 24px;
+}
+
+.hero-content h1 {
+    max-width: 450px;
+    /* padding-left: 2rem; */
+    margin-bottom: 2.4rem;
+    margin-top: 0.6rem;
 }
 
 .flex-container hero {
@@ -186,17 +212,29 @@ section.hero {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem 1.4rem;
-    margin-top: 3.2rem;
+    /* margin-top: 2.4rem; */
+    /* padding-left: 2.6rem; */
 }
+
+/* Avatud uste banner */
+section.banner {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--primary-lime);
+    color: var(--primary-blue);
+}
+
 
 .container p {
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
 
+/* Buttons */
 .button {
     display: inline-block;
-    font-size: clamp(1.8rem, 1.7rem, 0.25vw, 1.8rem);
+    font-size: 20px/28px;
     border: 2px solid var(--primary-blue);
     display: inline-flex;
     align-items: center;

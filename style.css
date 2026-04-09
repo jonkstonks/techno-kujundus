@@ -28,10 +28,9 @@ body {
             rgba(255, 255, 255, 0) 50%,
             rgba(255, 255, 255, 1) 79%),
         url("./images/hero-bg.png");
-    background-repeat: repeat-y;
-    background-size: auto 100%;
-    background-position-x: center;
     background-attachment: fixed;
+    background-position: -250px top;
+    background-size: cover;
     font-family: 'Onest';
     background-color: (var(--primary-white));
     color: (var(--primary-blue));
@@ -40,7 +39,7 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .flex-container {
@@ -49,7 +48,6 @@ body {
 }
 
 /* Header */
-
 header {
     position: sticky;
     top: 0;
@@ -64,7 +62,7 @@ header .flex-container {
     width: 1440px;
     justify-content: space-between;
     max-width: 1440px !important;
-    padding: 0 1.8rem 0 1.5rem;
+    padding: 0 1rem 0 1rem;
     margin: 0 auto;
 }
 
@@ -93,17 +91,16 @@ nav ul {
 nav a {
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 22px;
     padding: 6px 0;
     margin: 0 auto;
     line-height: 60px;
     color: var(--primary-black);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Nav hover animation */
-
 nav a::after {
     content: '';
     position: absolute;
@@ -135,10 +132,9 @@ section {
 }
 
 /* Headings */
-
 h1 {
     font-size: 72px;
-    line-height: 5.3rem;
+    line-height: 6rem;
     font-weight: 600;
     /* margin-bottom: 1rem; */
 }
@@ -163,7 +159,6 @@ h4 {
 h5 {
     font-size: 22px;
     /* font-weight: 600; */
-    margin-bottom: 1rem;
 }
 
 /* Hero */
@@ -182,7 +177,7 @@ section.hero {
 } */
 
 .hero-content {
-    padding-right: 48px;
+    /* padding-right: 48px; */
     width: 1440px;
 }
 
@@ -194,17 +189,17 @@ section.hero {
 }
 
 .hero-content h1 {
-    max-width: 450px;
-    /* padding-left: 2rem; */
+    font-size: 96px;
     margin-bottom: 2.4rem;
     margin-top: 0.6rem;
 }
 
 .flex-container hero {
     align-items: center;
+    width: 1440px !important;
     display: flex;
     flex-wrap: wrap;
-    gap: 2.4rem 4.8rem;
+    gap: 2.4rem;
     margin: 0 auto;
 }
 
@@ -247,8 +242,8 @@ section.banner p {
 .button {
     display: inline-block;
     gap: 6px;
-    font-size: 24px/28px;
-    border: 2px solid var(--primary-blue);
+    font-size: 26px;
+    border: 3px solid var(--primary-blue);
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -441,8 +436,8 @@ section#mid article {
 }
 
 footer {
-    background: #111;
-    color: #fff;
+    background: var(--primary-white);
+    color: var(--primary-blue);
     padding: 2rem 0;
 }
 
@@ -453,7 +448,7 @@ footer .flex-container {
 
 footer .logo,
 footer nav a {
-    color: #ecf0f1;
+    color: var(--primary-blue);
     font-weight: 700;
 }
 

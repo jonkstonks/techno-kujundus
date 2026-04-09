@@ -174,7 +174,7 @@ p {
     /* margin-bottom: 1rem; */
 }
 
-/* Hero */
+/* Section 1: Hero */
 
 section.hero {
     padding-top: 2.4rem;
@@ -226,7 +226,7 @@ section.hero {
     /* padding-left: 2.6rem; */
 }
 
-/* Avatud uste banner */
+/* Section 2: Avatud uste banner */
 section.banner {
     display: flex;
     justify-content: center;
@@ -284,7 +284,7 @@ section.banner p {
     max-width: fit-content;
 }
 
-/* 6ppesuunad */
+/* Section 3: 6ppesuunad */
 h2.title {
     display: flex;
     justify-content: center;
@@ -353,11 +353,12 @@ section.oppesuunad {
     display: block;
 }
 
-/* Teadmised ja oskused banner */
+/* Section 4: Teadmised ja oskused */
 section#mid {
     background-color: var(--primary-blue);
     color: var(--primary-white);
     padding: 80px;
+    height: 544px;
     margin: 0 auto;
 }
 
@@ -369,7 +370,9 @@ section#mid {
 }
 
 #mid .flex-container {
+    height: 208px;
     display: flex;
+    align-items: flex-start;
     gap: 64px;
 }
 
@@ -396,9 +399,25 @@ section#mid {
     padding: 0;
 }
 
-section#mid article {
+#mid article img.plus-sign {
+    user-select: none;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+#mid article {
+    position: relative;
+    overflow: visible;
+    margin-top: 0;
     display: flex;
+    flex-direction: column;
     width: 280px;
+    max-height: 208px;
+    justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.2); 
     padding: 1.2rem;
@@ -406,7 +425,20 @@ section#mid article {
     flex-wrap: wrap;
 }
 
-/* Mis on Techno TLN? */
+#mid article.top {
+    margin-top: 0;
+}
+
+#mid article.bot {
+    margin-top: 4rem;
+}
+
+#mid article h4 {
+    position: relative;
+    z-index: 1;
+}
+
+/* Section 5: Meie lugu */
 section.ourstory .container {
     padding: 80px;
     justify-content: center;
@@ -439,7 +471,7 @@ section.ourstory .button.tertiary {
     align-self: center;
 }
 
-/* Uudised ja lood */
+/* Section 6: Uudised ja lood */
 section.news {
     background: var(--primary-grey);
     color: var(--primary-blue);
@@ -483,7 +515,7 @@ section.news p.intro {
     margin-bottom: 2rem;
 }
 
-/* Infogrupp / subscribe */
+/* Section 8: Subscribe */
 section.subscribe {
     background: var(--primary-blue);
     color: var(--primary-white);
@@ -595,6 +627,7 @@ section.subscribe {
     margin-top: 24px;
 }
 
+/* Footer */
 footer {
     background: var(--primary-white);
     color: var(--primary-blue);

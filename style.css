@@ -24,13 +24,14 @@ body {
     /* background-image: url("./images/hero-bg.png"); */
     background-image:
         linear-gradient(to right,
-            rgba(255, 255, 255, 1) 20%,
-            rgba(255, 255, 255, 0) 50%,
-            rgba(255, 255, 255, 1) 79%),
+            rgba(255, 255, 255, 1) 15%,
+            rgba(255, 255, 255, 0) 55%,
+            rgba(255, 255, 255, 1) 100%),
         url("./images/hero-bg.png");
     background-attachment: fixed;
-    background-position: -250px top;
-    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
     font-family: 'Onest';
     background-color: (var(--primary-white));
     color: (var(--primary-blue));
@@ -226,6 +227,10 @@ section.hero {
     /* padding-left: 2.6rem; */
 }
 
+.hero img {
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 20%);
+}
+
 /* Section 2: Avatud uste banner */
 section.banner {
     display: flex;
@@ -256,7 +261,6 @@ section.banner p {
 
 /* Buttons */
 .button {
-    display: inline-block;
     gap: 6px;
     font-size: 22px;
     border: 3px solid var(--primary-blue);
@@ -300,6 +304,7 @@ section.oppesuunad {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 3rem;
 }
 
 #oppesuunad article {
@@ -358,21 +363,24 @@ section#mid {
     background-color: var(--primary-blue);
     color: var(--primary-white);
     padding: 80px;
-    height: 544px;
+    /* height: 544px; */
     margin: 0 auto;
 }
 
 #mid .container {
     display: flex;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     flex-direction: column;
     gap: 3.3rem;
 }
 
 #mid .flex-container {
-    height: 208px;
+    min-height: 120px;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
     gap: 64px;
 }
 
@@ -395,6 +403,7 @@ section#mid {
 }
 
 #mid h4 {
+    font-size: 24px;
     font-weight: 300;
     padding: 0;
 }
@@ -411,22 +420,17 @@ section#mid {
 
 #mid article {
     position: relative;
-    overflow: visible;
     margin-top: 0;
     display: flex;
     flex-direction: column;
     width: 280px;
-    max-height: 208px;
+    /* max-height: 176px; */
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.2); 
     padding: 1.2rem;
     text-align: center;
     flex-wrap: wrap;
-}
-
-#mid article.top {
-    margin-top: 0;
 }
 
 #mid article.bot {
@@ -436,6 +440,22 @@ section#mid {
 #mid article h4 {
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 1320px) {
+    #mid .container {
+        max-width: 100%;
+    }
+
+    #mid .flex-container {
+        min-height: 0;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    #mid article.bot {
+        margin-top: 0;
+    }
 }
 
 /* Section 5: Meie lugu */
@@ -681,13 +701,23 @@ footer nav a {
         font-size: 1.5rem;
     }
 
-    .feature-row {
-        grid-template-columns: 1fr;
+    #mid .container {
+        gap: 2rem;
     }
 
-    .feature-row-reverse> :first-child,
-    .feature-row-reverse> :last-child {
-        order: initial;
+    #mid h2,
+    #mid h2#blue {
+        width: 100%;
+        text-align: center;
+    }
+
+    #mid .flex-container {
+        gap: 1rem;
+    }
+
+    #mid article {
+        width: 100%;
+        max-width: 340px;
     }
 
     .subscribe h2 {
@@ -716,10 +746,6 @@ footer nav a {
 }
 
 @media (max-width: 480px) {
-    .intro-text {
-        font-size: 1rem;
-    }
-
     header .flex-container {
         gap: 0.5rem;
     }

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="section7.css">
 </head>
 
 <body>
@@ -56,7 +57,7 @@
                 </div>
             </div>
         </section>
-        <!-- Lahtiste uste banner -->
+        <!-- Section 2:Lahtiste uste banner -->
         <section class="banner" id="lahtised-uksed">
             <p>Lahtiste uste päevad 15. mail!</p>
             <a href="" class="button tertiary">Vaata lähemalt
@@ -72,7 +73,7 @@
         <!-- Section 3: 6pisuunad -->
         <section class="oppesuunad">
             <div class="container">
-                <h2 id="oppesuunad-title">Mida saad õppida</h2>
+                <h2 class="title">Mida saad õppida</h2>
                 <div class="flex-container" id="oppesuunad">
                     <article>
                         <h3>Logistika</h3>
@@ -166,10 +167,11 @@
         <!-- Section 5: Meie lugu -->
         <section class="ourstory">
             <div class="container">
-                <h2>Mis on Techno TLN?</h2>
-                <p>Techno TLN on uus ja edumeelne tehnoloogiakolledž, kus saab õppida oskusi, millega tulevik töötab.</p>
-                    <p>Kool sünnib nelja pika ajalooga tehnikakooli liitumisel ja alustab uue nime all 2026. aastal.</p>
-                    <p class="caption"><strong>Meil on neli kaasaegset ja mõnusat õppehoonet Tallinnas.</strong></p>
+                <h2 class="title">Mis on Techno TLN?</h2>
+                <p class="intro">Techno TLN on uus ja edumeelne tehnoloogiakolledž, kus saab õppida oskusi, millega
+                    tulevik töötab.</p>
+                <p>Kool sünnib nelja pika ajalooga tehnikakooli liitumisel ja alustab uue nime all 2026. aastal.</p>
+                <p class="caption"><strong>Meil on neli kaasaegset ja mõnusat õppehoonet Tallinnas.</strong></p>
                 <div class="flex-container">
                     <article>
                         <img src="./images/techno-tln-mustamae.png" alt="Techno TLN Mustamäe hoone">
@@ -184,50 +186,109 @@
                         <img src="./images/techno-tln-kesklinn.png" alt="Techno TLN kesklinna hoone">
                     </article>
                 </div>
+                <a href="" class="button tertiary">Loe meie lugu</a>
             </div>
-            <a href="" class="button tertiary">Loe meie lugu</a>
         </section>
 
         <!-- Section 6: Uudised ja lood -->
         <section class="news">
             <div class="container">
-                <h2>Uudised ja lood</h2>
-                <p>Loe, kuidas meie õppurid ja õpetajad loovad tulevikku</p>
-                <div class="flex-container">
-                    <article>
+                <h2 class="title">Uudised ja lood</h2>
+                <p class="intro">Loe, kuidas meie õppurid ja õpetajad loovad tulevikku</p>
+                <div class="flex-container" id="news">
+                    <article class="news-item">
                         <img src="./images/uudis-1.png" alt="Uudis 1">
-                        <p>10.09.2025</p>
-                        <h5>Uudis 1</h5>
+                        <div class="news-item-title">
+                            <p class="news-date">10.09.2025</p>
+                            <h5>Noor Meister 2025</h5>
+                        </div>
                     </article>
-                    <article>
+                    <article class="news-item">
                         <img src="./images/uudis-2.png" alt="Uudis 2">
-                        <p>10.09.2025</p>
-                        <h5>Uudis 2</h5>
+                        <div class="news-item-title">
+                            <p class="news-date">10.09.2025</p>
+                            <h5>Mehaanikud võitsid Euroopa võistlused</h5>
+                        </div>
                     </article>
-                    <article>
+                    <article class="news-item">
                         <img src="./images/uudis-3.png" alt="Uudis 3">
-                        <p>10.09.2025</p>
-                        <h5>Uudis 3</h5>
+                        <div class="news-item-title">
+                            <p class="news-date">10.09.2025</p>
+                            <h5>Uus 3D-printimise labor avati Techno Sõpruses</h5>
+                        </div>
                     </article>
                 </div>
-                <a href="" class="button secondary">Vaata kõiki lugusi</a>
+                <a href="" class="button secondary">
+                    <h5>Vaata kõiki lugusid</h5>
+                </a>
             </div>
         </section>
 
-        <!-- Section 7: Subscribe -->
+        <!-- Section 7: Meie inimesed -->
+        <section class="people">
+            <div class="container">
+                <h2 class="title">Meie inimesed. Meie lood.</h2>
+                <p class="intro">Vaata, mida meie inimesed räägivad ja saa osa meie ägedast koolielust.</p>
+                <div class="flex-container people-grid">
+                    <article class="video-item">
+                        <button type="button" class="video-trigger" data-video="https://www.youtube.com/embed/WsptdUFthWI" aria-label="Ava video: Õpilase lugu">
+                            <img class="video-thumbnail" src="./images/thumbnails/video-1.png" alt="Õpilase lugu eelvaade">
+                            <img class="play-overlay" src="./images/icons/icon_play_full.png" alt="" aria-hidden="true">
+                        </button>
+                        <h5>Miia lugu: Miks ma valisin Techno TLN?</h5>
+                    </article>
+                    <article class="video-item">
+                        <button type="button" class="video-trigger" data-video="https://www.youtube.com/embed/WsptdUFthWI" aria-label="Ava video: Õpetaja vaade">
+                            <img class="video-thumbnail" src="./images/thumbnails/video-2.png" alt="Õpetaja vaade eelvaade">
+                            <img class="play-overlay" src="./images/icons/icon_play_full.png" alt="" aria-hidden="true">
+                        </button>
+                        <h5>Tomi lugu: Kuhu Techno TLN mind edasi viis? </h5>
+                    </article>
+                    <article class="video-item">
+                        <button type="button" class="video-trigger" data-video="https://www.youtube.com/embed/WsptdUFthWI" aria-label="Ava video: Kooli päev">
+                            <img class="video-thumbnail" src="./images/thumbnails/video-3.png" alt="Kooli päev eelvaade">
+                            <img class="play-overlay" src="./images/icons/icon_play_full.png" alt="" aria-hidden="true">
+                        </button>
+                        <h5>Vaata, mis toimus meie sügishäkatonil</h5>
+                    </article>
+                    <article class="video-item">
+                        <button type="button" class="video-trigger" data-video="https://www.youtube.com/embed/WsptdUFthWI" aria-label="Ava video: Kogukonna lugu">
+                            <img class="video-thumbnail" src="./images/thumbnails/video-4.png" alt="Kogukonna lugu eelvaade">
+                            <img class="play-overlay" src="./images/icons/icon_play_full.png" alt="" aria-hidden="true">
+                        </button>
+                        <h5>Avatud uste päev 2025</h5>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="video-lightbox" id="video-lightbox" aria-hidden="true" hidden>
+            <div class="lightbox-container">
+                <div class="lightbox-content">
+                    <button type="button" class="lightbox-close" id="video-lightbox-close">Close | ✕</button>
+                    <div class="video-container">
+                        <iframe id="video-lightbox-iframe" title="Video preview" src="" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 8: Subscribe -->
         <section class="subscribe">
             <div class="container">
-                <h2>Hakka fänniks!</h2>
+                <h2 class="title">Hakka fänniks!</h2>
                 <h5>Saa esimesena uudiseid ning võida merch'i</h5>
                 <form class="subscribe-form">
                     <div class="subscribe-fields">
                         <div class="field-group">
                             <label for="subscriber-name">Sinu nimi</label>
-                            <input id="subscriber-name" name="name" type="text" placeholder="Eesnimi Perekonnanimi" required>
+                            <input id="subscriber-name" name="name" type="text" placeholder="Eesnimi Perekonnanimi"
+                                required>
                         </div>
                         <div class="field-group">
                             <label for="subscriber-email">E-posti aadress</label>
-                            <input id="subscriber-email" name="email" type="email" placeholder="Sinu e-posti aadress" required>
+                            <input id="subscriber-email" name="email" type="email" placeholder="Sinu e-posti aadress"
+                                required>
                         </div>
                     </div>
                     <fieldset class="subscribe-role">
@@ -291,6 +352,7 @@
             </div>
         </div>
     </footer>
+    <script src="./section7.js" defer></script>
 </body>
 
 </html>

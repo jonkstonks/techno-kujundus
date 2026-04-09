@@ -37,7 +37,9 @@ body {
 }
 
 section {
+    padding: 80px;
     align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -48,6 +50,7 @@ section {
 
 .flex-container {
     display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -95,7 +98,7 @@ nav ul {
 nav a {
     position: relative;
     display: inline-block;
-    font-size: 22px;
+    font-size: 18px;
     padding: 6px 0;
     margin: 0 auto;
     line-height: 60px;
@@ -192,14 +195,16 @@ section.hero {
 }
 
 .hero-content h2 {
-    display: flex;
     justify-content: left !important;
     font-weight: 500 !important;
     padding-top: 24px;
 }
 
 .hero-content h1 {
-    font-size: 96px;
+    display: flex;
+    text-align: left !important;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 1.05;
     margin-bottom: 2.4rem;
     margin-top: 0.6rem;
 }
@@ -253,7 +258,7 @@ section.banner p {
 .button {
     display: inline-block;
     gap: 6px;
-    font-size: 26px;
+    font-size: 22px;
     border: 3px solid var(--primary-blue);
     display: inline-flex;
     align-items: center;
@@ -276,14 +281,15 @@ section.banner p {
     color: var(--primary-white);
     border-color: transparent;
     background-color: var(--primary-blue);
+    max-width: fit-content;
 }
 
 /* 6ppesuunad */
-#oppesuunad-title {
+h2.title {
     display: flex;
     justify-content: center;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 section.oppesuunad {
@@ -402,16 +408,79 @@ section#mid article {
 
 /* Mis on Techno TLN? */
 section.ourstory .container {
+    padding: 80px;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
+.ourstory .flex-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 40px;
+}
+
+.ourstory p.intro {
+    margin-bottom: 0;
+}
+
+.ourstory p strong {
+    display: inline-block;
+}
+
 .ourstory .container p.caption strong {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+}
 
+section.ourstory .button.tertiary {
+    align-self: center;
+}
+
+/* Uudised ja lood */
+section.news {
+    background: var(--primary-grey);
+    color: var(--primary-blue);
+}
+
+.news-item p.news-date{
+    font-size: 16px;
+    color: var(--primary-black);
+    margin-bottom: 0.5rem;
+}
+
+article.news-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: var(--primary-white);
+    padding-bottom: 24px;
+    text-align: left;
+}
+
+.news-item-title {
+    padding: 16px 24px 24px 24px;
+}
+
+.news-item-title h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.flex-container#news {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.news .container {
+    padding: 80px;
+}
+
+section.news p.intro {
+    color: var(--primary-black);
+    margin-bottom: 2rem;
 }
 
 /* Infogrupp / subscribe */
@@ -422,19 +491,18 @@ section.subscribe {
 }
 
 .subscribe .container {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .subscribe h2,
 .subscribe h5 {
     color: var(--primary-white);
-    text-align: center;
 }
 
 .subscribe h2 {
+    margin-bottom: 1rem;
     font-size: 3.5rem;
-    margin-bottom: 0.5rem;
 }
 
 .subscribe h5 {
@@ -465,6 +533,7 @@ section.subscribe {
 
 .field-group label {
     font-size: 1.4rem;
+    text-align: left;
     font-weight: 700;
     color: var(--primary-white);
 }
@@ -498,7 +567,7 @@ section.subscribe {
     float: left;
     margin-right: 0.25rem;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .subscribe-role label {

@@ -149,7 +149,7 @@ h1 {
 
 h2 {
     font-size: 56px;
-    line-height: 4.5rem;
+    line-height: 4rem;
     font-weight: 400;
     /* margin-bottom: 1rem; */
 }
@@ -297,7 +297,8 @@ h2.title {
 }
 
 section.oppesuunad {
-    padding: 3rem 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #oppesuunad {
@@ -322,8 +323,8 @@ section.oppesuunad {
 #oppesuunad img {
     display: inline-flex;
     width: 340px;
-    height: 100% ;
-    object-fit:fill;
+    height: 100%;
+    object-fit: fill;
 }
 
 #oppesuunad h3 {
@@ -338,7 +339,7 @@ section.oppesuunad {
     width: 24px;
     height: 24px;
     stroke: var(--primary-blue);
-}   
+}
 
 #oppesuunad .button {
     width: 40px;
@@ -364,7 +365,6 @@ section#mid {
     color: var(--primary-white);
     padding: 80px;
     /* height: 544px; */
-    margin: 0 auto;
 }
 
 #mid .container {
@@ -427,7 +427,7 @@ section#mid {
     /* max-height: 176px; */
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2); 
+    background: rgba(255, 255, 255, 0.2);
     padding: 1.2rem;
     text-align: center;
     flex-wrap: wrap;
@@ -497,7 +497,7 @@ section.news {
     color: var(--primary-blue);
 }
 
-.news-item p.news-date{
+.news-item p.news-date {
     font-size: 16px;
     color: var(--primary-black);
     margin-bottom: 0.5rem;
@@ -534,6 +534,137 @@ section.news p.intro {
     color: var(--primary-black);
     margin-bottom: 2rem;
 }
+
+/* Section 7: Sündmused */
+section.events {
+    padding: 80px;
+    background: var(--primary-white);
+    color: var(--primary-blue);
+    width: 100%;
+}
+
+.events .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .flex-container {
+    display: flex;
+    width: 1280px;
+    padding: 0 auto;
+}
+
+.events .intro {
+    color: var(--primary-black);
+    margin-bottom: 2rem;
+}
+
+#events {
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#events .calendar {
+    width: min(100%, 340px);
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.event-item {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    column-gap: 1rem;
+    row-gap: 0.35rem;
+    align-items: start;
+    padding: 0 auto;
+    background: transparent;
+}
+
+.event-item h4 {
+    margin: 0 auto;
+}
+
+.event-item .date {
+    grid-row: 1 / span 2;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-cyan);
+    color: var(--primary-white);
+    line-height: 1;
+}
+
+.event-item .date h4 {
+    font-size: 1.45rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.event-item .date p {
+    margin: 0.1rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.event-item h5 {
+    grid-column: 2;
+    margin: 0;
+    color: var(--primary-blue);
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 600;
+    justify-self: start;
+}
+
+.event-details {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem 0.65rem;
+    color: var(--primary-black);
+    font-size: 1rem;
+    line-height: 1.35;
+}
+
+.event-details img {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.events .button.tertiary {
+    margin-top: 2rem;
+    align-self: center;
+}
+
+@media (max-width: 900px) {
+    #events {
+        flex-direction: column;
+    }
+
+    #events .calendar {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+}
+
+
 
 /* Section 8: Subscribe */
 section.subscribe {

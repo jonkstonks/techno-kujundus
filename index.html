@@ -57,7 +57,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Section 2:Lahtiste uste banner -->
         <section class="banner" id="lahtised-uksed">
             <p>Lahtiste uste päevad 15. mail!</p>
@@ -229,6 +229,61 @@
             </div>
         </section>
 
+        <!-- Section: Syndmused -->
+        <section class="events">
+            <div class="container">
+                <h2 class="title">Sündmused</h2>
+                <p class="intro">Täienda oma oskusi ja osale põnevatel sündmustel</p>
+                <div class="flex-container" id="events">
+                    <!-- Jääb praegu .png kalender, vaja muid asju teha I'm sorryyyyyyyy -->
+                    <img class="calendar" src="./images/cal-placeholder.png" alt="Placeholder calendar">
+                    <div class="event-list">
+                        <article class="event-item">
+                            <div class="date"><h4>07</h4><p>OKT</p></div>
+                            <h5>Avatud uste päev Techno TLN koolides (erinevad asukohad)</h5>
+                            <div class="event-details">
+                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon"> 
+                                22. okt - 22. okt 2026 
+                                <img src="./images/icons/icon_clock.svg" alt="Clock icon"> 
+                                09:00 
+                                <img src="./images/icons/icon_location.svg" alt="Location icon">
+                                Techno TLN Lasnamäe</div>
+                        </article>
+                        <article class="event-item">
+                            <div class="date"><h4>24</h4><p>OKT</p></div>
+                            <h5>Noor Meister 2025 suur finaal</h5>
+                            <div class="event-details">
+                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon"> 
+                                22. okt - 22. okt 2026 
+                                <img src="./images/icons/icon_clock.svg" alt="Clock icon"> 
+                                16:30 
+                                <img src="./images/icons/icon_location.svg" alt="Location icon">
+                                Techno TLN Lasnamäe</div>
+                        </article>
+                        <article class="event-item">
+                            <div class="date"><h4>05</h4><p>NOV</p></div>
+                            <h5>Täiskasvanute koolituste tutvustus</h5>
+                            <div class="event-details">
+                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon"> 
+                                22. okt - 22. okt 2026 
+                                <img src="./images/icons/icon_clock.svg" alt="Clock icon"> 
+                                12:00 
+                                <img src="./images/icons/icon_location.svg" alt="Location icon">
+                                Techno TLN Lasnamäe</div>
+                        </article>
+                        </div>
+                </div>
+                <a href="" class="button tertiary">
+                    <h5>Vaata kõiki sündmusi </h5><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-arrow-right">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
         <!-- Section 7: Meie inimesed -->
         <section class="people">
             <div class="container">
@@ -236,29 +291,39 @@
                 <p class="intro">Vaata, mida meie inimesed räägivad ja saa osa meie ägedast koolielust.</p>
                 <div class="flex-container people-grid">
                     <article class="video-item">
-                        <button type="button" class="video-trigger" data-video="https://www.youtube.com/embed/2GgiZZhO-PA" aria-label="Ava video: Õpilase lugu">
-                            <img class="video-thumbnail" src="./images/thumbnails/video-1.png" alt="Õpilase lugu eelvaade">
+                        <button type="button" class="video-trigger"
+                            data-video="https://www.youtube.com/embed/2GgiZZhO-PA" aria-label="Ava video: Õpilase lugu">
+                            <img class="video-thumbnail" src="./images/thumbnails/video-1.png"
+                                alt="Õpilase lugu eelvaade">
                             <img class="play-overlay" src="./images/icons/icon_play_full.png" alt="" aria-hidden="true">
                         </button>
                         <h5>Miia lugu: Miks ma valisin Techno TLN?</h5>
                     </article>
                     <article class="video-item">
-                        <button type="button" class="video-trigger" data-video="https://www.youtube.com/embed/2GgiZZhO-PA" aria-label="Ava video: Õpetaja vaade">
-                            <img class="video-thumbnail" src="./images/thumbnails/video-2.png" alt="Õpetaja vaade eelvaade">
+                        <button type="button" class="video-trigger"
+                            data-video="https://www.youtube.com/embed/2GgiZZhO-PA"
+                            aria-label="Ava video: Õpetaja vaade">
+                            <img class="video-thumbnail" src="./images/thumbnails/video-2.png"
+                                alt="Õpetaja vaade eelvaade">
                             <img class="play-overlay" src="./images/icons/icon_play_full.png" alt="" aria-hidden="true">
                         </button>
                         <h5>Tomi lugu: Kuhu Techno TLN mind edasi viis? </h5>
                     </article>
                     <article class="video-item">
-                        <button type="button" class="video-trigger" data-video="https://www.youtube.com/embed/2GgiZZhO-PA" aria-label="Ava video: Kooli päev">
-                            <img class="video-thumbnail" src="./images/thumbnails/video-3.png" alt="Kooli päev eelvaade">
+                        <button type="button" class="video-trigger"
+                            data-video="https://www.youtube.com/embed/2GgiZZhO-PA" aria-label="Ava video: Kooli päev">
+                            <img class="video-thumbnail" src="./images/thumbnails/video-3.png"
+                                alt="Kooli päev eelvaade">
                             <img class="play-overlay" src="./images/icons/icon_play_full.png" alt="" aria-hidden="true">
                         </button>
                         <h5>Vaata, mis toimus meie sügishäkatonil</h5>
                     </article>
                     <article class="video-item">
-                        <button type="button" class="video-trigger" data-video="https://www.youtube.com/embed/2GgiZZhO-PA" aria-label="Ava video: Kogukonna lugu">
-                            <img class="video-thumbnail" src="./images/thumbnails/video-4.png" alt="Kogukonna lugu eelvaade">
+                        <button type="button" class="video-trigger"
+                            data-video="https://www.youtube.com/embed/2GgiZZhO-PA"
+                            aria-label="Ava video: Kogukonna lugu">
+                            <img class="video-thumbnail" src="./images/thumbnails/video-4.png"
+                                alt="Kogukonna lugu eelvaade">
                             <img class="play-overlay" src="./images/icons/icon_play_full.png" alt="" aria-hidden="true">
                         </button>
                         <h5>Avatud uste päev 2025</h5>
@@ -272,7 +337,8 @@
                 <div class="lightbox-content">
                     <button type="button" class="lightbox-close" id="video-lightbox-close">Close | ✕</button>
                     <div class="video-container">
-                        <iframe id="video-lightbox-iframe" title="Video preview" src="" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="video-lightbox-iframe" title="Video preview" src=""
+                            allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

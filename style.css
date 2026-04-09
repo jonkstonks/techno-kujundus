@@ -36,6 +36,10 @@ body {
     color: (var(--primary-blue));
 }
 
+section {
+    align-items: center;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -131,7 +135,7 @@ section {
     padding: 1rem 0 1rem 0;
 }
 
-/* Headings */
+/* Headings and paragraphs */
 h1 {
     font-size: 72px;
     line-height: 6rem;
@@ -157,8 +161,14 @@ h4 {
 }
 
 h5 {
-    font-size: 22px;
+    font-size: 20px;
     /* font-weight: 600; */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    /* margin-bottom: 1rem; */
 }
 
 /* Hero */
@@ -228,7 +238,8 @@ section.banner p {
 }
 
 .container p {
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -379,7 +390,6 @@ section#mid {
     padding: 0;
 }
 
-/* Teadmised ja oskused articles */
 section#mid article {
     display: flex;
     width: 280px;
@@ -390,49 +400,130 @@ section#mid article {
     flex-wrap: wrap;
 }
 
-
-
-.showcase-section .flex-container {
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.feature-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #fff;
-    border: 1px solid #e8e8e8;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.feature-row> :first-child {
-    min-height: 320px;
-    background-size: cover;
-    background-position: center;
-}
-
-.feature-row:first-of-type> :first-child {
-    background-image: url('https://www.monsgeek.com/wp-content/uploads/2026/02/MonsGeek-FUN60-Rapid-Trigger-Keyboard.avif');
-}
-
-.feature-row:last-of-type> :first-child {
-    background-image: url('https://www.monsgeek.com/wp-content/uploads/2026/02/MonsGeek-M1-V5-Quick-Release-Keyboard.avif');
-}
-
-.feature-row> :last-child {
-    padding: 2rem;
+/* Mis on Techno TLN? */
+section.ourstory .container {
+    justify-content: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.ourstory .container p.caption strong {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+/* Infogrupp / subscribe */
+section.subscribe {
+    background: var(--primary-blue);
+    color: var(--primary-white);
+    padding: 80px;
+}
+
+.subscribe .container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.subscribe h2,
+.subscribe h5 {
+    color: var(--primary-white);
+    text-align: center;
+}
+
+.subscribe h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe h5 {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.subscribe-fields {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.field-group label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-white);
+}
+
+.field-group input {
+    width: 100%;
+    border: 0;
+    height: 3rem;
+    padding: 0 0.75rem;
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--primary-white);
+    font-size: 1.2rem;
+}
+
+.field-group input::placeholder {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.subscribe-role {
+    border: 0;
+    padding: 0;
+    margin: 24px 0 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 1.6rem;
+    color: var(--primary-white);
 }
 
-.feature-row-reverse> :first-child {
-    order: 2;
+.subscribe-role legend {
+    float: left;
+    margin-right: 0.25rem;
+    font-size: 22px;
+    font-weight: 600;
 }
 
-.feature-row-reverse> :last-child {
-    order: 1;
+.subscribe-role label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.subscribe-role input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--primary-cyan);
+}
+
+.subscribe .button.subscribe {
+    font-family: 'Onest';
+    cursor: pointer;
+    background-color: var(--primary-cyan);
+    color: var(--primary-blue);
+    font-size: 22px;
+    font-weight: 500;
+    border: 0;
+    margin-top: 24px;
 }
 
 footer {
@@ -495,6 +586,30 @@ footer nav a {
     .feature-row-reverse> :first-child,
     .feature-row-reverse> :last-child {
         order: initial;
+    }
+
+    .subscribe h2 {
+        font-size: 2.1rem;
+    }
+
+    .subscribe h5 {
+        font-size: 1.15rem;
+    }
+
+    .subscribe-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe-role {
+        flex-wrap: wrap;
+        gap: 0.9rem 1.25rem;
+    }
+
+    .subscribe-role legend {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
     }
 }
 

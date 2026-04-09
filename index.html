@@ -139,7 +139,7 @@
             </div>
         </section>
 
-        <!-- Section 4: Meilt saad teadmis...askdhalskd -->
+        <!-- Section 4: Meilt saad teadmised ja oskused-->
         <section class="banner" id="mid">
             <div class="container">
                 <div class="title-container">
@@ -167,9 +167,9 @@
         <section class="ourstory">
             <div class="container">
                 <h2>Mis on Techno TLN?</h2>
-                <p>Techno TLN on uus ja edumeelne tehnoloogiakolledž, kus saab õppida oskusi, millega tulevik töötab.
-                    Kool sünnib nelja pika ajalooga tehnikakooli liitumisel ja alustab uue nime all 2026. aastal.</p>
-                <p><strong>Meil on neli kaasaegset ja mõnusat õppehoonet Tallinnas.</strong></p>
+                <p>Techno TLN on uus ja edumeelne tehnoloogiakolledž, kus saab õppida oskusi, millega tulevik töötab.</p>
+                    <p>Kool sünnib nelja pika ajalooga tehnikakooli liitumisel ja alustab uue nime all 2026. aastal.</p>
+                    <p class="caption"><strong>Meil on neli kaasaegset ja mõnusat õppehoonet Tallinnas.</strong></p>
                 <div class="flex-container">
                     <article>
                         <img src="./images/techno-tln-mustamae.png" alt="Techno TLN Mustamäe hoone">
@@ -184,8 +184,8 @@
                         <img src="./images/techno-tln-kesklinn.png" alt="Techno TLN kesklinna hoone">
                     </article>
                 </div>
-                <a href="" class="button tertiary">Loe meie lugu</a>
             </div>
+            <a href="" class="button tertiary">Loe meie lugu</a>
         </section>
 
         <!-- Section 6: Uudised ja lood -->
@@ -218,20 +218,34 @@
         <section class="subscribe">
             <div class="container">
                 <h2>Hakka fänniks!</h2>
-                <p>Saa esimesena uudiseid ning võida merch'i</p>
-                <form>
-                    <label for="name">Nimi:</label>
-                    <input type="name" placeholder="Eesnimi Perekonnanimi" required>
-                    <label for="email">E-post:</label>
-                    <input type="email" placeholder="Sinu e-posti aadress" required>
-                    <label for="radio">Olen: </label>
-                    <input type="radio" id="Lapsevanem" value="lapsevanem">
-                    <label for="Lapsevanem">Lapsevanem</label>
-                    <input type="radio" id="Õpilane" value="opilane">
-                    <label for="Õpilane">Õpilane</label>
-                    <input type="radio" id="Põhikooli lõpetaja" value="lopetaja">
-                    <label for="Põhikooli lõpetaja">Põhikooli lõpetaja</label>
-                    <button type="submit" class="button primary">Liitun infogrupiga</button>
+                <h5>Saa esimesena uudiseid ning võida merch'i</h5>
+                <form class="subscribe-form">
+                    <div class="subscribe-fields">
+                        <div class="field-group">
+                            <label for="subscriber-name">Sinu nimi</label>
+                            <input id="subscriber-name" name="name" type="text" placeholder="Eesnimi Perekonnanimi" required>
+                        </div>
+                        <div class="field-group">
+                            <label for="subscriber-email">E-posti aadress</label>
+                            <input id="subscriber-email" name="email" type="email" placeholder="Sinu e-posti aadress" required>
+                        </div>
+                    </div>
+                    <fieldset class="subscribe-role">
+                        <legend>Olen:</legend>
+                        <label for="role-lapsevanem">
+                            <input id="role-lapsevanem" name="role" type="radio" value="lapsevanem" required>
+                            <span>Lapsevanem</span>
+                        </label>
+                        <label for="role-opilane">
+                            <input id="role-opilane" name="role" type="radio" value="opilane">
+                            <span>Õpilane</span>
+                        </label>
+                        <label for="role-lopetaja">
+                            <input id="role-lopetaja" name="role" type="radio" value="lopetaja">
+                            <span>Põhikooli lõpetaja</span>
+                        </label>
+                    </fieldset>
+                    <button type="submit" class="button subscribe">Liitun infogrupiga</button>
                 </form>
             </div>
         </section>

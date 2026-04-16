@@ -9,24 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="section7.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="flex-container">
-            <a href="index.html" class="logo"><img src="./images/Techno_TLN_logo-01.svg"></a>
-            <nav>
-                <ul>
-                    <li id="menu-item"><a href="">Sisseastujale</a></li>
-                    <li id="menu-item"><a href="">Õpilasele</a></li>
-                    <li id="menu-item"><a href="">Sündmused</a></li>
-                    <li id="menu-item"><a href="">Uudised ja lood</a></li>
-                    <li id="menu-item"><a href="">Koolist</a></li>
-                    <li id="menu-item"><a href="">Kontakt</a></li>
-                    <li id="menu-item"><a href="">E-pood</a></li>
+    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid px-3 px-lg-4 header-shell">
+            <a href="index.html" class="navbar-brand logo">
+                <img src="./images/Techno_TLN_logo-01.svg" alt="Techno TLN logo">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Ava menüü">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="">Sisseastujale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Õpilasele</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Sündmused</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Uudised ja lood</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Koolist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">E-pood</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,8 +44,8 @@
         <!-- Section 1: Hero -->
         <section class="hero">
             <div class="container">
-                <div class="flex-container hero">
-                    <div class="hero-content">
+                <div class="row align-items-center g-4 hero-row">
+                    <div class="hero-content col-12 col-lg-6">
                         <h2>Tulevikukool.</h2>
                         <h1>Vali kindel karjääritee!</h1>
                         <div class="hero-buttons">
@@ -53,7 +60,9 @@
                             <a href="" class="button secondary">Sisseastumisinfo</a>
                         </div>
                     </div>
-                    <img src="./images/Techno_TLN_web_banner_1440x840.png" alt="Hero banner">
+                    <div class="hero-image col-12 col-lg-6">
+                        <img class="img-fluid" src="./images/Techno_TLN_web_banner_1440x840.png" alt="Hero banner">
+                    </div>
                 </div>
             </div>
         </section>
@@ -75,8 +84,8 @@
         <section class="oppesuunad">
             <div class="container">
                 <h2 class="title">Mida saad õppida</h2>
-                <div class="flex-container" id="oppesuunad">
-                    <article>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 justify-content-center" id="oppesuunad">
+                    <article class="col">
                         <h3>Logistika</h3>
                         <a href="" class="button primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -86,7 +95,7 @@
                             </svg></a>
                         <img src="./images/oppesuund-square-teal.png" alt="Logistika">
                     </article>
-                    <article>
+                    <article class="col">
                         <img src="./images/oppesuund-square-blue.png" alt="Digi- ja meediatehnoloogia">
                         <h3>Digi- ja meediatehnoloogia</h3>
                         <a href="" class="button primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -96,7 +105,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg></a>
                     </article>
-                    <article>
+                    <article class="col">
                         <h3>Elektrotehnika</h3>
                         <a href="" class="button primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -106,7 +115,7 @@
                             </svg></a>
                         <img src="./images/oppesuund-square-yellow.png" alt="Elektrotehnika">
                     </article>
-                    <article>
+                    <article class="col">
                         <h3>Tööstustehnoloogia</h3>
                         <a href="" class="button primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -116,9 +125,8 @@
                             </svg></a>
                         <img src="./images/oppesuund-square-blue.png" alt="Tööstustehnoloogia">
                     </article>
-                    </article>
-                    <article>
-                        <img src="./images/oppesuund-square-yellow.png" alt="Ehi1tustehnoloogia">
+                    <article class="col">
+                        <img src="./images/oppesuund-square-yellow.png" alt="Ehitustehnoloogia">
                         <h3>Ehitustehnoloogia</h3>
                         <a href="" class="button primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -127,7 +135,7 @@
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg></a>
                     </article>
-                    <article>
+                    <article class="col">
                         <h3>Veel logistikat!</h3>
                         <a href="" class="button primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -148,20 +156,20 @@
                     <h2>Meilt saad teadmised ja oskused.</h2>
                     <h2 id="blue">Loo oma tulevik siin.</h2>
                 </div>
-                <div class="flex-container">
-                    <article class="top">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 justify-content-center">
+                    <article class="top col">
                         <img class="plus-sign" src="./images/icons/plus.svg" alt="" aria-hidden="true">
                         <h4>Õppimine läbi tegemise ja praktika</h4>
                     </article>
-                    <article class="bot">
+                    <article class="bot col">
                         <img class="plus-sign" src="./images/icons/plus.svg" alt="" aria-hidden="true">
                         <h4>Toetav kogukond ja koostöö ettevõtetega</h4>
                     </article>
-                    <article class="top">
+                    <article class="top col">
                         <img class="plus-sign" src="./images/icons/plus.svg" alt="" aria-hidden="true">
                         <h4>Õpetajad ja mentorid päris töömaailmast</h4>
                     </article>
-                    <article class="bot">
+                    <article class="bot col">
                         <img class="plus-sign" src="./images/icons/plus.svg" alt="" aria-hidden="true">
                         <h4>Kiirtee ellu ja edasi õppima</h4>
                     </article>
@@ -177,17 +185,17 @@
                     tulevik töötab.</p>
                 <p>Kool sünnib nelja pika ajalooga tehnikakooli liitumisel ja alustab uue nime all 2026. aastal.</p>
                 <p class="caption"><strong>Meil on neli kaasaegset ja mõnusat õppehoonet Tallinnas.</strong></p>
-                <div class="flex-container">
-                    <article>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 justify-content-center">
+                    <article class="col">
                         <img src="./images/techno-tln-mustamae.png" alt="Techno TLN Mustamäe hoone">
                     </article>
-                    <article>
+                    <article class="col">
                         <img src="./images/techno-tln-jarve.png" alt="Techno TLN Järve hoone">
                     </article>
-                    <article>
+                    <article class="col">
                         <img src="./images/techno-tln-lasnamae.png" alt="Techno TLN lasnamäe hoone">
                     </article>
-                    <article>
+                    <article class="col">
                         <img src="./images/techno-tln-kesklinn.png" alt="Techno TLN kesklinna hoone">
                     </article>
                 </div>
@@ -200,22 +208,22 @@
             <div class="container">
                 <h2 class="title">Uudised ja lood</h2>
                 <p class="intro">Loe, kuidas meie õppurid ja õpetajad loovad tulevikku</p>
-                <div class="flex-container" id="news">
-                    <article class="news-item">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="news">
+                    <article class="news-item col">
                         <img src="./images/uudis-1.png" alt="Uudis 1">
                         <div class="news-item-title">
                             <p class="news-date">10.09.2025</p>
                             <h5>Noor Meister 2025</h5>
                         </div>
                     </article>
-                    <article class="news-item">
+                    <article class="news-item col">
                         <img src="./images/uudis-2.png" alt="Uudis 2">
                         <div class="news-item-title">
                             <p class="news-date">10.09.2025</p>
                             <h5>Mehaanikud võitsid Euroopa võistlused</h5>
                         </div>
                     </article>
-                    <article class="news-item">
+                    <article class="news-item col">
                         <img src="./images/uudis-3.png" alt="Uudis 3">
                         <div class="news-item-title">
                             <p class="news-date">10.09.2025</p>
@@ -231,47 +239,61 @@
 
         <!-- Section: Syndmused -->
         <section class="events">
-            <div class="container">
+            <div class="container d-flex flex-column align-items-center">
                 <h2 class="title">Sündmused</h2>
                 <p class="intro">Täienda oma oskusi ja osale põnevatel sündmustel</p>
-                <div class="flex-container" id="events">
+                <div class="row g-4 align-items-center" id="events">
                     <!-- Jääb praegu .png kalender, vaja muid asju teha I'm sorryyyyyyyy -->
-                    <img class="calendar" src="./images/cal-placeholder.png" alt="Placeholder calendar">
-                    <div class="event-list">
+                    <div class="col-12 col-lg-4">
+                        <img class="calendar img-fluid" src="./images/cal-placeholder.png" alt="Placeholder calendar">
+                    </div>
+                    <div class="event-list col-12 col-lg-8 d-flex flex-column gap-4">
                         <article class="event-item">
-                            <div class="date"><h4>07</h4><p>OKT</p></div>
+                            <div class="date">
+                                <h4>07</h4>
+                                <p>OKT</p>
+                            </div>
                             <h5>Avatud uste päev Techno TLN koolides (erinevad asukohad)</h5>
                             <div class="event-details">
-                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon"> 
-                                22. okt - 22. okt 2026 
-                                <img src="./images/icons/icon_clock.svg" alt="Clock icon"> 
-                                09:00 
+                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon">
+                                22. okt - 22. okt 2026
+                                <img src="./images/icons/icon_clock.svg" alt="Clock icon">
+                                09:00
                                 <img src="./images/icons/icon_location.svg" alt="Location icon">
-                                Techno TLN Lasnamäe</div>
+                                Techno TLN Lasnamäe
+                            </div>
                         </article>
                         <article class="event-item">
-                            <div class="date"><h4>24</h4><p>OKT</p></div>
+                            <div class="date">
+                                <h4>24</h4>
+                                <p>OKT</p>
+                            </div>
                             <h5>Noor Meister 2025 suur finaal</h5>
                             <div class="event-details">
-                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon"> 
-                                22. okt - 22. okt 2026 
-                                <img src="./images/icons/icon_clock.svg" alt="Clock icon"> 
-                                16:30 
+                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon">
+                                22. okt - 22. okt 2026
+                                <img src="./images/icons/icon_clock.svg" alt="Clock icon">
+                                16:30
                                 <img src="./images/icons/icon_location.svg" alt="Location icon">
-                                Techno TLN Lasnamäe</div>
+                                Techno TLN Lasnamäe
+                            </div>
                         </article>
                         <article class="event-item">
-                            <div class="date"><h4>05</h4><p>NOV</p></div>
+                            <div class="date">
+                                <h4>05</h4>
+                                <p>NOV</p>
+                            </div>
                             <h5>Täiskasvanute koolituste tutvustus</h5>
                             <div class="event-details">
-                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon"> 
-                                22. okt - 22. okt 2026 
-                                <img src="./images/icons/icon_clock.svg" alt="Clock icon"> 
-                                12:00 
+                                <img src="./images/icons/noun-calendar.svg" alt="Calendar icon">
+                                22. okt - 22. okt 2026
+                                <img src="./images/icons/icon_clock.svg" alt="Clock icon">
+                                12:00
                                 <img src="./images/icons/icon_location.svg" alt="Location icon">
-                                Techno TLN Lasnamäe</div>
+                                Techno TLN Lasnamäe
+                            </div>
                         </article>
-                        </div>
+                    </div>
                 </div>
                 <a href="" class="button tertiary">
                     <h5>Vaata kõiki sündmusi </h5><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -289,8 +311,8 @@
             <div class="container">
                 <h2 class="title">Meie inimesed. Meie lood.</h2>
                 <p class="intro">Vaata, mida meie inimesed räägivad ja saa osa meie ägedast koolielust.</p>
-                <div class="flex-container people-grid">
-                    <article class="video-item">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 people-grid">
+                    <article class="video-item col">
                         <button type="button" class="video-trigger"
                             data-video="https://www.youtube.com/embed/2GgiZZhO-PA" aria-label="Ava video: Õpilase lugu">
                             <img class="video-thumbnail" src="./images/thumbnails/video-1.png"
@@ -299,7 +321,7 @@
                         </button>
                         <h5>Miia lugu: Miks ma valisin Techno TLN?</h5>
                     </article>
-                    <article class="video-item">
+                    <article class="video-item col">
                         <button type="button" class="video-trigger"
                             data-video="https://www.youtube.com/embed/2GgiZZhO-PA"
                             aria-label="Ava video: Õpetaja vaade">
@@ -309,7 +331,7 @@
                         </button>
                         <h5>Tomi lugu: Kuhu Techno TLN mind edasi viis? </h5>
                     </article>
-                    <article class="video-item">
+                    <article class="video-item col">
                         <button type="button" class="video-trigger"
                             data-video="https://www.youtube.com/embed/2GgiZZhO-PA" aria-label="Ava video: Kooli päev">
                             <img class="video-thumbnail" src="./images/thumbnails/video-3.png"
@@ -318,7 +340,7 @@
                         </button>
                         <h5>Vaata, mis toimus meie sügishäkatonil</h5>
                     </article>
-                    <article class="video-item">
+                    <article class="video-item col">
                         <button type="button" class="video-trigger"
                             data-video="https://www.youtube.com/embed/2GgiZZhO-PA"
                             aria-label="Ava video: Kogukonna lugu">
@@ -350,13 +372,13 @@
                 <h2 class="title">Hakka fänniks!</h2>
                 <h5>Saa esimesena uudiseid ning võida merch'i</h5>
                 <form class="subscribe-form">
-                    <div class="subscribe-fields">
-                        <div class="field-group">
+                    <div class="subscribe-fields row gy-4 gx-5 w-100">
+                        <div class="field-group col-12 col-md-6">
                             <label for="subscriber-name">Sinu nimi</label>
                             <input id="subscriber-name" name="name" type="text" placeholder="Eesnimi Perekonnanimi"
                                 required>
                         </div>
-                        <div class="field-group">
+                        <div class="field-group col-12 col-md-6">
                             <label for="subscriber-email">E-posti aadress</label>
                             <input id="subscriber-email" name="email" type="email" placeholder="Sinu e-posti aadress"
                                 required>
@@ -387,43 +409,42 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="flex-container">
-                <a href="" class="logo">
-                    <img src="./images/Techno_TLN_logo-01.svg" alt="LOGO">
+            <div class="d-flex justify-content-between align-items-center footer-bar">
+                <a href="index.html" class="logo">
+                    <img src="./images/Techno_TLN_logo-01.svg" alt="Techno TLN logo">
                 </a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="" aria-label="Facebook">
-                                <img src="./images/icons/icon_social_facebook.svg" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="Instagram">
-                                <img src="./images/icons/icon_social_instagram.svg" alt="Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="LinkedIn">
-                                <img src="./images/icons/icon_social_linkedin.svg" alt="LinkedIn">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="X">
-                                <img src="./images/icons/icon_social_x.svg" alt="X">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="YouTube">
-                                <img src="./images/icons/icon_social_youtube.svg" alt="YouTube">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <ul class="list-unstyled d-flex align-items-center mb-0 footer-socials">
+                    <li>
+                        <a href="" aria-label="Facebook">
+                            <img src="./images/icons/icon_social_facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" aria-label="Instagram">
+                            <img src="./images/icons/icon_social_instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" aria-label="LinkedIn">
+                            <img src="./images/icons/icon_social_linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" aria-label="X">
+                            <img src="./images/icons/icon_social_x.svg" alt="X">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" aria-label="YouTube">
+                            <img src="./images/icons/icon_social_youtube.svg" alt="YouTube">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
     <script src="./section7.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

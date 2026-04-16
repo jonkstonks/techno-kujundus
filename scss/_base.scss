@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:
+        linear-gradient(to right,
+            rgba(255, 255, 255, 1) 15%,
+            rgba(255, 255, 255, 0) 55%,
+            rgba(255, 255, 255, 1) 100%),
+        url("./images/hero-bg.png");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    font-family: "Onest";
+    background-color: var(--primary-white);
+    color: var(--primary-blue);
+}
+
+main {
+    color: var(--primary-blue);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 1rem 0;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-white);
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 6rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 4rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h2.title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}

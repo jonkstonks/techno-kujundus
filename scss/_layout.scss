@@ -1,0 +1,105 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--primary-white);
+    border-bottom: 1px solid #ddd;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .header-shell {
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header .navbar-collapse {
+    flex-grow: 0;
+}
+
+header .navbar-toggler {
+    border: 0;
+    box-shadow: none;
+}
+
+header .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+header .navbar-toggler-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    height: 40px;
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    color: var(--primary-black);
+    text-decoration: none;
+    gap: 2rem;
+}
+
+header nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    padding: 6px 0;
+    margin: 0 auto;
+    line-height: 60px;
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-cyan);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+header nav a:hover::after,
+header nav a:focus-visible::after {
+    transform: scaleX(1);
+}
+
+footer {
+    background: var(--primary-white);
+    color: var(--primary-blue);
+    padding: 2rem 0;
+}
+
+footer .footer-bar {
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+footer .footer-socials {
+    gap: 1rem;
+}
+
+footer .footer-socials img {
+    display: block;
+}

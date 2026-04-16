@@ -1,0 +1,103 @@
+@media (max-width: 1320px) {
+    #mid .container {
+        max-width: 100%;
+    }
+
+    #mid .row {
+        min-height: 0;
+        gap: 2rem;
+    }
+
+    #mid article.bot {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    #events {
+        flex-direction: column;
+    }
+
+    #events .calendar {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header .header-shell {
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    header nav a {
+        line-height: 40px;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #mid .container {
+        gap: 2rem;
+    }
+
+    #mid h2,
+    #mid h2#blue {
+        width: 100%;
+        text-align: center;
+    }
+
+    #mid .row {
+        gap: 1rem;
+    }
+
+    #mid article {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .subscribe h2 {
+        font-size: 2.1rem;
+    }
+
+    .subscribe h5 {
+        font-size: 1.15rem;
+    }
+
+    .subscribe-role {
+        flex-wrap: wrap;
+        gap: 0.9rem 1.25rem;
+    }
+
+    .subscribe-role legend {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    footer .footer-bar {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    header .header-shell {
+        gap: 0.5rem;
+    }
+}
